@@ -1,0 +1,110 @@
+.favorite-product-screen {
+    background-color: #0b300b!important;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    .screen-header {
+        min-height: 100px;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+
+        .large-buttons {
+            display: flex;
+
+            button {
+                width: 150px;
+                height: 100px;
+                font-size: medium;
+                margin-right: 10px;
+                font-weight: bold;
+
+                &.white {
+                    border: none;
+                    border-radius:50px 50px;
+                }
+
+                &.red {
+                    background-color: rgb(224, 87, 53);
+                    color: white;
+                    border: none;
+                    border-radius:50px 50px;
+                }
+                &.orange {
+                    background-color: rgb(207, 149, 41);
+                    color: white;
+                    border: none;
+                    border-radius:50px 50px;
+                }
+                &.blue {
+                    background-color: rgb(65, 65, 151);
+                    color: white;
+                    border: none;
+                    border-radius:50px 50px;
+                }
+            }
+        }
+    }
+
+    .favorite-content {
+        display: flex;
+        height:100%;
+        overflow: hidden;
+    }
+
+    .left-pane {
+        flex: 1 1 70%;
+        overflow: auto;
+        padding: 10px;
+
+        .favorite-list {
+            width: 100%;
+            background-color: white;
+            color: black;
+
+            tr, td, th {
+                padding: 10px;
+            }
+
+            tr {
+                border: 1px solid #eee;
+                cursor: pointer;
+
+                &:nth-child(even){
+                    background-color: #ccc;
+                }
+
+                &:hover {
+                    background-color: #017e84;
+                    color: white;
+                }
+            }
+        }
+    }
+
+    .right-pane {
+        flex: 1 1 30%;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        background-color: #333;
+
+        .selected-product {
+            padding: 10px;
+        }
+
+        .pads {
+            margin-top: auto;
+
+            .control-button {
+                color: #333;
+            }
+
+            .subpads {
+                display: flex;
+            }
+        }
+    }
+}

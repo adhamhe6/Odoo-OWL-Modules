@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<templates>
+
+    <t t-name="DoctorButton" owl="1">
+        <div class="control-button">
+            <i class="fa fa-superpowers" role="img" aria-label="Doctor Button" title="Doctor Button"/>Doctor
+        </div>
+    </t>
+<button class="button set-partner" t-att-class="{'decentered': isLongName}"
+                    t-on-click="() => this.trigger('click-partner')">
+                <t t-if="!env.isMobile"><i class="fa fa-user" role="img" aria-label="Customer" title="Customer" /></t>
+                <t t-if="props.partner">
+                    <t t-esc="props.partner.name" />
+                </t>
+                <t t-else="">
+                    Customer
+                </t>
+            </button>
+</templates>

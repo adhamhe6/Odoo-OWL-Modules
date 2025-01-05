@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<templates>
+
+    <t t-name="DocButton" owl="1">
+        <div class="control-button">
+            <i class="fa fa-user" role="img" aria-label="Doctor Button" title="Doctor Button"/>Doctor
+            </t>
+        </div>
+    </t>
+
+</templates>
